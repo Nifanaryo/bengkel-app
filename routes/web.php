@@ -10,7 +10,7 @@ use App\Http\Controllers\TransactionController;
 
 // Redirect halaman depan langsung ke dashboard
 Route::get('/', function () {
-    return redirect()->route('dashboard');
+    return view('welcome');
 });
 
 // Rute yang WAJIB Login & Terverifikasi

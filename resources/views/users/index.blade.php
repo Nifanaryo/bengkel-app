@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Kelola Data User / Mekanik') }}
+            {{ __('Kelola Data Admin / Mekanik') }}
         </h2>
     </x-slot>
 
@@ -23,7 +23,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Form Tambah User -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 h-fit">
-                    <h3 class="text-lg font-bold mb-4 text-gray-700">Tambah User Baru</h3>
+                    <h3 class="text-lg font-bold mb-4 text-gray-700">Tambah Admin / Mekanik Baru</h3>
                     <form action="{{ route('users.store') }}" method="POST">
                         @csrf
                         <div class="mb-4">
@@ -39,14 +39,14 @@
                             <input type="password" name="password" class="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
                         </div>
                         <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md shadow">
-                            Simpan User
+                            Simpan Admin / Mekanik
                         </button>
                     </form>
                 </div>
 
                 <!-- Tabel Daftar User -->
                 <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-sm border border-gray-200 overflow-x-auto">
-                    <h3 class="text-lg font-bold mb-4 text-gray-700">Daftar Pengguna / Mekanik</h3>
+                    <h3 class="text-lg font-bold mb-4 text-gray-700">Daftar Admin / Mekanik</h3>
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="border-b bg-gray-50 text-xs font-semibold text-gray-600 uppercase">
